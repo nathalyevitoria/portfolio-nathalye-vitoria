@@ -47,16 +47,17 @@ export function Navigation() {
               <NavigationMenuList>
                 {navItems.map((item) => (
                   <NavigationMenuItem key={item.href}>
-                    <Link href={item.href}>
-                      <NavigationMenuLink
-                        className={cn(
-                          navigationMenuTriggerStyle(),
-                          pathname === item.href && "bg-gradient-to-r from-purple-100 to-blue-100 text-purple-800 dark:from-purple-900/30 dark:to-blue-900/30 dark:text-purple-300"
-                        )}
-                      >
+                    <NavigationMenuLink
+                      asChild
+                      className={cn(
+                        navigationMenuTriggerStyle(),
+                        pathname === item.href && "bg-gradient-to-r from-purple-100 to-blue-100 text-purple-800 dark:from-purple-900/30 dark:to-blue-900/30 dark:text-purple-300"
+                      )}
+                    >
+                      <Link href={item.href}>
                         {item.label}
-                      </NavigationMenuLink>
-                    </Link>
+                      </Link>
+                    </NavigationMenuLink>
                   </NavigationMenuItem>
                 ))}
               </NavigationMenuList>
