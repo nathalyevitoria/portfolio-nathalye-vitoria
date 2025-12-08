@@ -601,7 +601,7 @@ export default function PrivacyPage() {
               </p>
               <div className="bg-muted p-4 rounded-lg space-y-2">
                 <p><strong>Controlador de Dados:</strong> Lucas Gomes Leria</p>
-                <p><strong>Email:</strong> <a href="mailto:lucasleria17@gmail.com" className="text-primary hover:underline">lucasleria17@gmail.com</a></p>
+                <p><strong>Email:</strong> <a href="mailto:suporte-portfolio-nathalye-vitoria@googlegroups.com" className="text-primary hover:underline">suporte-portfolio-nathalye-vitoria@googlegroups.com</a></p>
                 <p><strong>Telefone:</strong> <a href="tel:11945735280" className="text-primary hover:underline">(11) 94573-5280</a></p>
                 <p><strong>Localização:</strong> São Paulo - Brasil</p>
               </div>

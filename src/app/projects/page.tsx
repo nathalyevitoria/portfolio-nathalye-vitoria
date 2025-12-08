@@ -3,11 +3,8 @@
 import { useState } from "react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { ExternalLink, Github, Cpu, Zap, Wrench, Bot, Eye, Award, Link as LinkIcon } from "lucide-react"
-import Link from "next/link"
+import { Cpu, Zap, Wrench, Bot, Eye } from "lucide-react"
 import { projects } from "@/data/ProjectsData"
-import { certifications } from "@/data/CertificationsData"
 import { ProjectModal } from "@/components/project-modal"
 import { getCertificationsForProject } from "@/lib/data-utils"
 
@@ -45,7 +42,7 @@ export default function ProjectsPage() {
             Todos os Projetos
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {projects.map((project, index) => {
+            {projects.map((project) => {
               const projectCertifications = getCertificationsForProject(project.id)
               
               return (
@@ -75,21 +72,8 @@ export default function ProjectsPage() {
                     )}
                   </div>
                   <CardHeader>
-                    <CardTitle className="flex items-center justify-between text-lg line-clamp-2">
+                    <CardTitle className="text-lg line-clamp-2">
                       {project.name}
-                      <div className="flex gap-2">
-                        <Button 
-                          variant="outline" 
-                          size="sm" 
-                          asChild 
-                          className="border-purple-200 hover:bg-purple-50 dark:border-purple-800 dark:hover:bg-purple-950/20"
-                          onClick={(e) => e.stopPropagation()}
-                        >
-                          <a href={`https://github.com/nathalyevitoria/${project.id}`} target="_blank" rel="noopener noreferrer">
-                            <Github className="h-4 w-4 text-purple-600" />
-                          </a>
-                        </Button>
-                      </div>
                     </CardTitle>
                     <CardDescription className="text-sm line-clamp-3">
                       {project.description}

@@ -96,7 +96,7 @@ export const projects = [
     location: "Laboratório de Eletrônica",
     team: "Individual",
     technologies: ["Eletrônica Analógica", "Reguladores de Tensão", "Retificação", "Filtragem", "CI 7805"],
-    github: "https://github.com/nathalye-vitoria/fonte-linear-5v",
+    github: "",
     live: "",
     documentation: "https://github.com/nathalye-vitoria/fonte-linear-5v/blob/main/README.md",
     achievements: [

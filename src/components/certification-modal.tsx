@@ -97,15 +97,13 @@ export function CertificationModal({ isOpen, onClose, certification, onCertifica
                 </div>
               )}
             </div>
-          </div>
 
-          {/* Skills and Topics */}
+          {/* Basic Info */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-purple-600">Competências e Tópicos</h3>
-            <div className="space-y-3">
+            <h3 className="text-lg font-semibold text-purple-600">Competências e Habilidades</h3>
+            <div className="grid grid-cols-1 gap-3">
               {getSkillsForCertification(certification.id).length > 0 ? (
                 <div className="space-y-2">
-                  <span className="font-medium text-sm">Principais Competências:</span>
                   <div className="flex flex-wrap gap-1">
                     {getSkillsForCertification(certification.id).map((skill) => (
                       <Badge 
@@ -127,6 +125,14 @@ export function CertificationModal({ isOpen, onClose, certification, onCertifica
                 </div>
               )}
               
+            </div>
+          </div>
+          </div>
+
+          {/* Skills and Topics */}
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold text-purple-600">Competências e Tópicos</h3>
+            <div className="space-y-3">
               {certification.topics && certification.topics.length > 0 ? (
                 <div className="space-y-2">
                   <span className="font-medium text-sm">Tópicos Abordados:</span>
@@ -156,42 +162,7 @@ export function CertificationModal({ isOpen, onClose, certification, onCertifica
           </div>
         </div>
 
-        {/* Certification Details */}
-        <div className="grid md:grid-cols-2 gap-6">
-          {/* Requirements */}
-          {certification.requirements && certification.requirements.length > 0 && (
-            <div>
-              <h3 className="text-lg font-semibold mb-3 text-purple-600">Requisitos</h3>
-              <div className="bg-purple-50 dark:bg-purple-950/20 rounded-lg p-4">
-                <ul className="text-sm text-muted-foreground space-y-1">
-                  {certification.requirements.map((req: string, index: number) => (
-                    <li key={index} className="flex items-start gap-2">
-                      <span className="text-purple-600 mt-1">•</span>
-                      <span>{req}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          )}
 
-          {/* Outcomes */}
-          {certification.outcomes && certification.outcomes.length > 0 && (
-            <div>
-              <h3 className="text-lg font-semibold mb-3 text-purple-600">Resultados Esperados</h3>
-              <div className="bg-purple-50 dark:bg-purple-950/20 rounded-lg p-4">
-                <ul className="text-sm text-muted-foreground space-y-1">
-                  {certification.outcomes.map((outcome: string, index: number) => (
-                    <li key={index} className="flex items-start gap-2">
-                      <Award className="h-4 w-4 text-purple-600 mt-0.5 flex-shrink-0" />
-                      <span>{outcome}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          )}
-        </div>
 
         {/* Links */}
         {certification.certificate || certification.credential || certification.moreInfo && (

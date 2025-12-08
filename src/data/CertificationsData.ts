@@ -33,17 +33,6 @@ export const certifications = [
       "Interpretação de diagramas elétricos",
       "Normas de segurança NR10"
     ],
-    requirements: [
-      "Ensino médio completo",
-      "Conhecimentos básicos de matemática",
-      "Idade mínima de 16 anos"
-    ],
-    outcomes: [
-      "Capacidade de montar e analisar circuitos eletrônicos básicos",
-      "Habilidade na utilização de instrumentos de medição",
-      "Compreensão dos princípios de funcionamento de componentes",
-      "Aplicação de normas de segurança em trabalhos elétricos"
-    ],
     linkedProjects: ["relogio"]
   },
   {
@@ -78,17 +67,6 @@ export const certifications = [
       "Transferência internacional de dados",
       "Boas práticas em segurança da informação",
       "Aspectos legais e penalidades"
-    ],
-    requirements: [
-      "Ensino superior em andamento ou completo",
-      "Conhecimentos básicos de TI",
-      "Experiência em ambiente corporativo"
-    ],
-    outcomes: [
-      "Capacidade de implementar programas de compliance com LGPD",
-      "Habilidade na elaboração de documentos de privacidade",
-      "Compreensão dos riscos associados ao tratamento de dados",
-      "Capacidade de responder a incidentes de segurança"
     ],
     linkedProjects: ["painel"]
   },
@@ -129,19 +107,6 @@ export const certifications = [
       "Versionamento de código com Git",
       "Containerização com Docker",
       "Segurança em aplicações web"
-    ],
-    requirements: [
-      "Lógica de programação",
-      "Conhecimentos básicos de web",
-      "Inglês técnico",
-      "Dedicação integral (40 horas/semana)"
-    ],
-    outcomes: [
-      "Capacidade de desenvolver aplicações web completas",
-      "Habilidade na criação de APIs RESTful robustas",
-      "Experiência em bancos de dados relacionais e NoSQL",
-      "Domínio de ferramentas de deploy e DevOps",
-      "Capacidade de trabalhar em equipes ágeis"
     ],
     linkedProjects: ["fonte", "batman"]
   }
