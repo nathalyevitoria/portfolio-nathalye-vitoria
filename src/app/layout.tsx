@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 import { ThemeProvider } from "@/components/theme-provider";
+import { CookieConsent } from "@/components/cookie-consent";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -49,6 +50,7 @@ export default function RootLayout({
           enableSystem={false}
           disableTransitionOnChange
         >
+          <CookieConsent />
           <Navigation />
           <main className="min-h-screen">
             {children}
