@@ -100,36 +100,45 @@ export const projects = [
     live: "",
     documentation: "https://github.com/nathalye-vitoria/fonte-linear-5v/blob/main/README.md",
     achievements: [
-      "Projeto funcional com saída estável de 5V",
-      "Implementação de proteções térmicas e contra curto-circuito",
-      "Layout profissional com bornes de conexão"
+      "integração de Sistemas",
+      "Sistema Supervisório",
+      "Layout profissional"
     ],
-    linkedCertifications: ["developer"],
+    linkedCertifications: [""],
     linkedSkills: [
-      "manutencao_motores",
-      "medicoes",
-      "documentacao_tecnica"
+      "",
+      "",
+      ""
     ]
-  },
+  }
+  ,
   {
-    id: "batman",
-    name: "BATMAN Usinado Em Uma Frezadora CNC - MILLING MACHiNE",
-    description: `Este projeto consiste na usinagem do logo do Batman em uma placa de alumínio utilizando uma fresadora CNC. O processo envolveu a programação das coordenadas, seleção das ferramentas adequadas, definição dos parâmetros de corte e execução da usinagem com precisão milimétrica.
-    O resultado final demonstra o domínio de técnicas de programação CNC, operação de máquinas-ferramenta computadorizadas e capacidade de transformar designs digitais em produtos físicos com alta qualidade de acabamento.`,
-    image: "/projects/post4/project-sample.jpg",
+    id: "",
+    name: "Carrinho Eletrônico Controlado Pelo Arduino Uno",
+    description: `Este projeto consiste no desenvolvimento de um carrinho eletrônico controlado por Arduino Uno, projetado para realizar movimentos de forma remota por meio de comunicação Bluetooth. O Arduino Uno atua como a unidade central de controle, sendo responsável pelo processamento da lógica de funcionamento e pelo acionamento dos componentes, conforme a programação desenvolvida na IDE do Arduino.
+A comunicação sem fio é realizada através do módulo Bluetooth HC-05, permitindo o envio de comandos a partir de um dispositivo externo, como um smartphone. Esses comandos são interpretados pelo microcontrolador e utilizados para controlar o acionamento dos motores DC, responsáveis pela movimentação do carrinho, por meio de um módulo de relés.
+O projeto integra conceitos fundamentais de eletrônica, programação e automação, demonstrando o controle de atuadores, comunicação serial sem fio e integração entre hardware e software.
+Materiais utilizados:
+- Arduino Uno
+- Módulo Bluetooth HC-05
+- Módulo de 8 relés
+- 4 motores DC com rodas
+- 2 pilhas de 4,7 V e 9 A`,
+
+    image: "/projects/post4/carriho1.jpg",
     media: [
-      { type: "image", src: "/projects/post4/project-sample.jpg" },
-      { type: "image", src: "/projects/post4/project-sample.jpg" },
-      { type: "image", src: "/projects/post4/project-sample.jpg" },
+      { type: "image", src: "/projects/post4/carrinho1.peg" },
+      { type: "image", src: "/projects/post4/carrinho2.peg" },
+      { type: "image", src: "/projects/post4/carrinho3.peg" },
       { type: "video", src: "/projects/post4/bat-vd.mp4" },
     ],
     period: "2025",
-    location: "Oficina de Usinagem CNC",
+    location: "SENAI SÃO PAULO",
     team: "Individual",
     technologies: ["Programação CNC", "Fresadora CNC", "Usinagem de Alumínio", "CAD/CAM", "Controle Numérico"],
-    github: "https://github.com/nathalye-vitoria/batman-cnc",
+    github: "",
     live: "",
-    documentation: "https://github.com/nathalye-vitoria/batman-cnc/blob/main/README.md",
+    documentation: "",
     achievements: [
       "Usinagem com precisão milimétrica",
       "Domínio de técnicas de programação CNC",
@@ -144,4 +153,44 @@ export const projects = [
       "raciocinio_logico"
     ]
   }
+  ,
+
+  {
+    id: "",
+    name: "TCC SENAI",
+    description: `Apresento meu Trabalho de Conclusão de Curso, desenvolvido com foco na automação de um processo industrial inspirado na indústria farmacêutica, unindo controle, precisão e tecnologia.
+
+O sistema foi projetado com IHM para criação e seleção de receitas. Integração com mesa cartesiana XYZ para separação dos ingredientes e um processo de mistura acionado por motor trifásico, controlado por inversor de frequência WEG CFW500, com variação de velocidade conforme cada receita. Todo o processo é gerenciado por um CLP Siemens S7-1500 e supervisionado pelo BluePlant. 
+
+Esse projeto é resultado de muito estudo, prática e evolução ao longo da formação.
+`,
+    image: "/projects/post8/TCCSENAI8.jpg",
+    media: [
+      { type: "image", src: "/projects/post5/TCCSENAI8.peg" },
+      { type: "image", src: "/projects/post5/TCCSENAI4.peg" },
+      { type: "image", src: "/projects/post5/TCCSENAI2.peg" },
+      { type: "video", src: "/projects/post5/tccsenai.mp4" },
+    ],
+    period: "2025",
+    location: "SENAI SÃO PAULO",
+    team: "Nicollas G., Samyra F. , Victor L. , Vinicius R.",
+    technologies: ["CLP", "Inversor de Frequência", "IHM", "Supervisório", "Mesa Cartesiana"],
+    github: "",
+    live: "",
+    documentation: "https://github.com/nathalye-vitoria/batman-cnc/blob/main/README.md",
+    achievements: [
+      "Integração",
+      "Automação de Processo Industrial",
+      "Supervisório"
+    ],
+    linkedCertifications: ["developer"],
+    linkedSkills: [
+      "documentacao_tecnica",
+      "",
+      "",
+      "",
+      ""
+    ]
+  }
 ]
+
